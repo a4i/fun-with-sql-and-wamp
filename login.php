@@ -23,6 +23,7 @@ echo '
     </body>
 </html>
 ';
+	die;
 }
 
 $mysqli = mysqli_connect("localhost", "dbusertest", "dbpassword", "basetest");
