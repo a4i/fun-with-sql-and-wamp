@@ -1,4 +1,4 @@
-fetch('.//userdata.php')
+fetch('./userdata.php')
         .then(
             (r) => {
                 r.json().then(

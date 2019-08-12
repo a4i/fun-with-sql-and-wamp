@@ -3,7 +3,26 @@
 session_start();
 
 if (!isset($_POST) || !isset($_POST["login"]) ||!isset($_POST['pw'])) {
-    die('pas par formulaire');
+
+echo '
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        
+        <h1>Entrez</h1>
+        
+        <form action="./login.php" method="POST">
+            login: <input type="text" name="login" placeholder="login" >
+            <br>
+            password: <input type="password" name="pw" placeholder="***">
+            <input type="submit" text="text">
+        </form>
+
+    </body>
+</html>
+';
 }
 
 $mysqli = mysqli_connect("localhost", "dbusertest", "dbpassword", "basetest");
